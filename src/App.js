@@ -7,7 +7,7 @@ function App() {
   const [lastnameInput, setLastNameInput] = React.useState("");
   const [radioInput, setRadioInput] = React.useState("");
   return (
-    <div className="min-h-screen flex flex-col bg-zinc-900 text-slate-50 text-lg p-2">
+    <div className="container w-9/12 px-4 min-h-screen min-w-full flex flex-col bg-zinc-900 text-slate-50 text-lg p-2">
       <Header />
       <Summary
         nameInput={nameInput}
