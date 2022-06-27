@@ -5,7 +5,7 @@ export function RenderCounter() {
   renderCounter.current = renderCounter.current + 1;
   return (
     <div className="w-8">
-      <span className="text-sm text-gray-500">{renderCounter.current}x</span>
+      <span className="text-sm text-emerald-500">{renderCounter.current}x</span>
     </div>
   );
 }
