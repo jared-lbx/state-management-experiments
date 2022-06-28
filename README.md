@@ -1,5 +1,7 @@
-This repository aims to demonstrate various approaches to state management (`React.useState(...)` drilling, `Context`, `Zustand`, etc...) and their effects on the re-rendering of nested components.
+# Effort
 
-Usage: `npm run start`.
+I'm pretty familiar with useState, so this was pretty low effort.
 
-Click around and watch the re-render counts.
+# Scalability
+
+I would not say that this solution scales, since it requires super intensive prop-drilling!
