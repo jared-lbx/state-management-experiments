@@ -6,7 +6,7 @@ export function Grid() {
   return (
     <div className="mt-5 flex p-2 border">
       <RenderCounter />
-      <div className="mt-4 grid grid-cols-2 p-2 w-full justify-items-center">
+      <div className="mt-4 flex flex-col justify-center items-center sm:grid grid-cols-2 p-2 w-full justify-items-center">
         <FirstNameInput />
         <LastNameInput />
         <RadioInput />
