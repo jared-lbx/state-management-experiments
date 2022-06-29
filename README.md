@@ -7,6 +7,7 @@ non-trivial.
 ## Results
 
 [x] - Solve unnecessary re-renders
+
 [x] - Solve prop-drilling
 
 ## Scalability
