@@ -3,9 +3,9 @@ import { RenderCounter } from "./";
 import { useLastName, useFirstName, useRadioInput } from "../store";
 
 export function Summary() {
-  const { firstName } = useFirstName();
-  const { lastName } = useLastName();
-  const { radioInput } = useRadioInput();
+  const [firstName] = useFirstName();
+  const [lastName] = useLastName();
+  const [radioInput] = useRadioInput();
   return (
     <div className="border p-2">
       <div className="w-full flex flex-row justify-end align-end">
