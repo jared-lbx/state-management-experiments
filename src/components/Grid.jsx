@@ -1,5 +1,5 @@
 import React from "react";
-import { useLastName, useFirstName, useRadioInput } from "../contexts/hooks";
+import { useLastName, useFirstName, useRadioInput } from "../store";
 import { RenderCounter, Input, Radio } from "./";
 
 export function Grid() {
@@ -15,23 +15,6 @@ export function Grid() {
   );
 }
 
-/*
- move hooks & inputs from Grid to their own components
- prevents Grid from re-rendering
- was:
- ```
-     const {firstName, setFirstName} = useFirstName()
-     const {lastName, setLastName} = useLastName()
-     const {radioInput, setRadioInput} = useRadioInput()
-     return (
-       // drill those into <Input>/<Radio>
-     )
- ```
-
-  this caused Grid to re-render a bunch
-  kinda hacky - subclassing for specialization is a no-no
-  still, solves re-render problem 
-*/
 function FirstNameInput() {
   const { firstName, setFirstName } = useFirstName();
   return (

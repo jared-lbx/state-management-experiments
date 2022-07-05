@@ -1,6 +1,6 @@
 import React from "react";
-import { useFirstName, useLastName, useRadioInput } from "../contexts/hooks";
 import { RenderCounter } from "./";
+import { useLastName, useFirstName, useRadioInput } from "../store";
 
 export function Summary() {
   const { firstName } = useFirstName();
