@@ -13,7 +13,7 @@ function App() {
       <LastNameProvider>
         <RadioInputProvider>
           <div className="container w-9/12 px-4 min-h-screen min-w-full flex flex-col bg-zinc-900 text-slate-50 text-lg p-2">
-            <Header />
+            <Header name={"Clever Context"} />
             <Summary />
             <Grid />
           </div>
