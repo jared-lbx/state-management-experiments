@@ -1,15 +1,23 @@
 import React from "react";
-import { useLastName, useFirstName, useRadioInput } from "../contexts/hooks";
 import { RenderCounter, Input, Radio } from "./";
 
-export function Grid() {
+export function Grid({ firstname, lastname, radioinput }) {
   return (
     <div className="mt-5 flex p-2 border">
       <RenderCounter />
       <div className="mt-4 flex flex-col justify-center items-center sm:grid grid-cols-2 p-2 w-full justify-items-center">
-        <FirstNameInput />
-        <LastNameInput />
-        <RadioInput />
+        <FirstNameInput
+          firstName={firstname.firstName}
+          setFirstName={firstname.setFirstName}
+        />
+        <LastNameInput
+          lastName={lastname.lastName}
+          setLastName={lastname.setLastName}
+        />
+        <RadioInput
+          radioInput={radioinput.radioInput}
+          setRadioInput={radioinput.setRadioInput}
+        />
       </div>
     </div>
   );
@@ -32,8 +40,7 @@ export function Grid() {
   kinda hacky - subclassing for specialization is a no-no
   still, solves re-render problem 
 */
-function FirstNameInput() {
-  const { firstName, setFirstName } = useFirstName();
+function FirstNameInput({ firstName, setFirstName }) {
   return (
     <div className="w-64 border m-4 p-2">
       <Input value={firstName} setValue={setFirstName} name={"Firstname"} />
@@ -41,8 +48,7 @@ function FirstNameInput() {
   );
 }
 
-function LastNameInput() {
-  const { lastName, setLastName } = useLastName();
+function LastNameInput({ lastName, setLastName }) {
   return (
     <div className="w-64 border m-4 p-2">
       <Input value={lastName} setValue={setLastName} name={"Lastname"} />
@@ -50,8 +56,7 @@ function LastNameInput() {
   );
 }
 
-function RadioInput() {
-  const { radioInput, setRadioInput } = useRadioInput();
+function RadioInput({ radioInput, setRadioInput }) {
   return (
     <div className="w-64 border p-2">
       <Radio value={radioInput} setValue={setRadioInput} />
