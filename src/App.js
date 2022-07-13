@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Summary, Header, Grid } from "./components";
+import { Summary, Header, Grid, Markdown } from "./components";
 
 function App() {
   const [nameInput, setNameInput] = React.useState("");
@@ -19,6 +19,7 @@ function App() {
         lastname={{ value: lastnameInput, handle: setLastNameInput }}
         radio={{ value: radioInput, handle: setRadioInput }}
       />
+      <Markdown />
     </div>
   );
 }
