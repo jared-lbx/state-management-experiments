@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Summary, Header, Grid } from "./components";
+import { Summary, Header, Grid, Markdown } from "./components";
 import {
   FirstNameProvider,
   LastNameProvider,
@@ -16,6 +16,7 @@ function App() {
             <Header name={"Clever Context"} />
             <Summary />
             <Grid />
+            <Markdown />
           </div>
         </RadioInputProvider>
       </LastNameProvider>
