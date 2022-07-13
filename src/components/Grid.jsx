@@ -35,6 +35,7 @@ function LastNameInput() {
 
 function RadioInput() {
   const [radioInput, setRadioInput] = useRadioInput();
+
   return (
     <div className="w-64 border p-2">
       <Radio value={radioInput} setValue={setRadioInput} />

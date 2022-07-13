@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Summary, Header, Grid } from "./components";
+import { Summary, Header, Grid, Markdown } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Header name={"Jotai"} />
       <Summary />
       <Grid />
+      <Markdown />
     </div>
   );
 }
