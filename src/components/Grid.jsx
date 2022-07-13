@@ -2,7 +2,7 @@ import React from "react";
 import { useLastName, useFirstName, useRadioInput } from "../store";
 import { RenderCounter, Input, Radio } from "./";
 
-export function Grid() {
+export function Grid({ firstname, lastname, radioinput }) {
   return (
     <div className="mt-5 flex p-2 border">
       <RenderCounter />
@@ -14,7 +14,6 @@ export function Grid() {
     </div>
   );
 }
-
 function FirstNameInput() {
   const { firstName, setFirstName } = useFirstName();
   return (
