@@ -1,41 +1,30 @@
-import create from "zustand";
-import shallow from "zustand/shallow";
+import { proxy, useSnapshot } from "valtio";
 
-const useStore = create((set) => ({
-  firstName: "",
-  lastName: "",
-  radioInput: "",
-  setFirstName: (txt) => set((state) => ({ firstName: txt })),
-  setLastName: (txt) => set((state) => ({ lastName: txt })),
-  setRadioInput: (txt) => set((state) => ({ radioInput: txt })),
-}));
+
+const state = proxy({
+  firstName : "",
+  lastName : "",
+  radioInput : ""
+});
+
+export function useStore() {
+  return useSnapshot(state);
+}
 
 export const useFirstName = () => {
-  return useStore(
-    (state) => ({
-      firstName: state.firstName,
-      setFirstName: state.setFirstName,
-    }),
-    shallow
-  );
+  const { firstName } =  useStore();
+
+  return { setFirstName: (val) => state.firstName = val, firstName };
 };
 
 export const useLastName = () => {
-  return useStore(
-    (state) => ({
-      lastName: state.lastName,
-      setLastName: state.setLastName,
-    }),
-    shallow
-  );
-};
+  const { lastName } =  useStore();
+
+  return { setLastName: (val) => state.lastName = val, lastName };
+}
 
 export const useRadioInput = () => {
-  return useStore(
-    (state) => ({
-      radioInput: state.radioInput,
-      setRadioInput: state.setRadioInput,
-    }),
-    shallow
-  );
-};
+  const { radioInput } =  useStore();
+
+  return { setRadioInput: (val) => state.radioInput = val, radioInput };
+}

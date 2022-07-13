@@ -17,6 +17,7 @@ export function Grid() {
 
 function FirstNameInput() {
   const { firstName, setFirstName } = useFirstName();
+ 
   return (
     <div className="w-64 border m-4 p-2">
       <Input value={firstName} setValue={setFirstName} name={"Firstname"} />
