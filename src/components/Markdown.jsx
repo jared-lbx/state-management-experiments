@@ -7,22 +7,13 @@ export function Markdown() {
       <h1 className="text-xl font-bold text-center">Summary</h1>
       <div className="grid grid-cols-2 gap-2 pt-2">
         <Section title={"Complexity/Boilerplate"}>
-          <p className="italic">Medium-High</p>
+          <p className="italic">Low</p>
           <ul className="pl-6 list-disc">
             <li>Establish state</li>
-            <li>Create contexts</li>
-            <li>Wrap components with context providers</li>
-            <li>Consume contexts</li>
-            <li>Pass their props</li>
-            <li>Use these props</li>
+            <li>Drill said state</li>
           </ul>
         </Section>
-        <Section title={"Lines of code"}>
-          <ul className="pl-6 list-disc">
-            <li>Hooks: 80</li>
-            <li>Store: 20</li>
-          </ul>
-        </Section>
+        <Section title={"Lines of code"}>Like, 10!</Section>
 
         <Section title={"Time to implement"}>
           <p>
@@ -30,11 +21,8 @@ export function Markdown() {
           </p>
         </Section>
 
-        <Section title={"Ease of learning"}>
-          <p>
-            Medium. The APIs themselves are simple enough - there is simply a
-            large amount of boilerplate that is necessary.
-          </p>
+        <Section title={"Difficulty of learning"}>
+          <p>Trivially low.</p>
         </Section>
 
         <Section title={"Community size/Is it maintained?"}>
