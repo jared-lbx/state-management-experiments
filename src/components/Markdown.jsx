@@ -7,27 +7,21 @@ export function Markdown() {
       <h1 className="text-xl font-bold text-center">Summary</h1>
       <div className="grid grid-cols-2 gap-2 pt-2">
         <Section title={"Complexity/Boilerplate"}>
-          <p className="italic">Medium-High</p>
+          <p className="italic">
+            Low-medium. Not intrinsically difficult, I just found the concept of
+            mutable state strange.
+          </p>
           <ul className="pl-6 list-disc">
-            <li>Establish state</li>
-            <li>Create contexts</li>
-            <li>Wrap components with context providers</li>
-            <li>Consume contexts</li>
-            <li>Pass their props</li>
-            <li>Use these props</li>
+            <li>Establish state/proxies</li>
+            <li>Grab & mutate those proxies from components.</li>
           </ul>
         </Section>
         <Section title={"Lines of code"}>
-          <ul className="pl-6 list-disc">
-            <li>Hooks: 80</li>
-            <li>Store: 20</li>
-          </ul>
+          <p>&lt; 50.</p>
         </Section>
 
         <Section title={"Time to implement"}>
-          <p>
-            Roughly 1 <span className="diagonal-fractions">1/2</span> - 2 hours
-          </p>
+          <p>Around 20 minutes.</p>
         </Section>
 
         <Section title={"Ease of learning"}>
@@ -38,21 +32,24 @@ export function Markdown() {
         </Section>
 
         <Section title={"Community size/Is it maintained?"}>
-          <p>Large by default - it is a core React API.</p>
+          <p>
+            Medium, and yes. 50 contributors, 200+ closed PRs, 100+ closed
+            issues.
+          </p>
         </Section>
 
         <Section title={"Does it solve our problems?"}>
           <ul>
             <li>
               Re-rendering:{" "}
-              <span className="inline-flex justify-center items-center text-xl font-semibold text-red-500">
-                x
+              <span className="inline-flex justify-center items-center text-xl font-semibold text-green-500">
+                o
               </span>
             </li>
             <li>
               Prop Drilling:{" "}
-              <span className="inline-flex justify-center items-center text-xl font-semibold text-red-500">
-                x
+              <span className="inline-flex justify-center items-center text-xl font-semibold text-green-500">
+                o
               </span>
             </li>
           </ul>
