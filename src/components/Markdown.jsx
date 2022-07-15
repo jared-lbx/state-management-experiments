@@ -6,35 +6,29 @@ export function Markdown() {
       <RenderCounter />
       <h1 className="text-xl font-bold text-center">Summary</h1>
       <div className="grid grid-cols-2 gap-2 pt-2">
-        <Section title={"Complexity/Boilerplate"}>
-          <p className="italic">Medium-High</p>
-          <ul className="pl-6 list-disc">
-            <li>Establish state</li>
-            <li>Create contexts</li>
-            <li>Wrap components with context providers</li>
-            <li>Consume contexts</li>
-            <li>Pass their props</li>
-            <li>Use these props</li>
-          </ul>
-        </Section>
         <Section title={"Lines of code"}>
-          <ul className="pl-6 list-disc">
-            <li>Hooks: 80</li>
-            <li>Store: 20</li>
-          </ul>
+          <p className="italic">&lt; 100</p>
         </Section>
 
         <Section title={"Time to implement"}>
-          <p>
-            Roughly 1 <span className="diagonal-fractions">1/2</span> - 2 hours
-          </p>
+          <p>Roughly 1 hour</p>
         </Section>
 
         <Section title={"Ease of learning"}>
           <p>
-            Medium. The APIs themselves are simple enough - there is simply a
-            large amount of boilerplate that is necessary.
+            Medium. The APIs themselves are simple enough, and this approach
+            simplifies the consumption of state when compared to callback
+            drilling..
           </p>
+        </Section>
+        <Section title={"Complexity/Boilerplate"}>
+          <p className="italic">Medium</p>
+          <ul className="pl-6 list-disc">
+            <li>Establish state/contexts</li>
+            <li>Create hooks</li>
+            <li>Wrap components with context providers</li>
+            <li>Consume state in components via hooks</li>
+          </ul>
         </Section>
 
         <Section title={"Community size/Is it maintained?"}>
@@ -45,14 +39,14 @@ export function Markdown() {
           <ul>
             <li>
               Re-rendering:{" "}
-              <span className="inline-flex justify-center items-center text-xl font-semibold text-red-500">
-                x
+              <span className="inline-flex justify-center items-center text-xl font-semibold text-green-500">
+                o
               </span>
             </li>
             <li>
               Prop Drilling:{" "}
-              <span className="inline-flex justify-center items-center text-xl font-semibold text-red-500">
-                x
+              <span className="inline-flex justify-center items-center text-xl font-semibold text-green-500">
+                o
               </span>
             </li>
           </ul>
