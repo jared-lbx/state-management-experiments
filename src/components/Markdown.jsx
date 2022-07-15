@@ -11,7 +11,7 @@ export function Markdown() {
         </Section>
 
         <Section title={"Time to implement"}>
-          <p>Roughly 1 hour</p>
+          <p>Around 45 minutes.</p>
         </Section>
 
         <Section title={"Difficulty of learning"}>
