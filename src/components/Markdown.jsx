@@ -47,7 +47,7 @@ export function Markdown() {
           </ul>
         </Section>
 
-        <Section title={"Ease of learning"}>
+        <Section title={"Difficulty of learning"}>
           <p>
             Medium. The APIs themselves are simple enough - there is simply a
             large amount of boilerplate that is necessary.
