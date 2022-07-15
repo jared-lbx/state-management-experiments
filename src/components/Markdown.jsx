@@ -14,7 +14,7 @@ export function Markdown() {
           <p>Roughly 1 hour</p>
         </Section>
 
-        <Section title={"Ease of learning"}>
+        <Section title={"Difficulty of learning"}>
           <p>
             Medium. The APIs themselves are simple enough, and this approach
             simplifies the consumption of state when compared to callback
